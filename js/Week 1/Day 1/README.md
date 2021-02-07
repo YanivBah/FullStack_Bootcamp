@@ -37,3 +37,25 @@ Why pay a fortune teller when you can just program your fortune yourself?
    location, partnerName, numberOfChildren.
 2. Based on this output the function returns a string with this format:
    `You will be a programmer in Tel Aviv and married to Sharon with 2 children`.
+
+---
+
+# 2.3 - Circle Area
+
+Write a function that calculates the circle area by a given radius as an
+argument. Print the area as it is calculated and then print it rounded to two
+decimal places.
+
+---
+
+# 2.4 - Date
+
+Find how to get the following:
+
+1. Name of the current day e.g. Sunday
+2. Current day of the month e.g. 31
+3. Current month e.g January
+4. Current Year e.g 2021
+
+Create a function that will return a string in the following format:
+`Today is Sunday the 31 of January, 2021`.

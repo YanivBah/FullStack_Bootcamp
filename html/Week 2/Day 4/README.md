@@ -1,13 +1,16 @@
 # 24.1 - CSS Grid Basics 1
 
 Remake these images using CSS Grid. Feel free to use more pleasant colors.
+
 ![Example](https://i.imgur.com/qxH7rlm.png)
 
 ---
 
 # 24.2 - CSS Grid Basics 2
 
-Remake these images using CSS Grid ![Example](https://i.imgur.com/udB622R.png)
+Remake these images using CSS Grid
+
+![Example](https://i.imgur.com/udB622R.png)
 
 ---
 
