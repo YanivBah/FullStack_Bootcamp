@@ -1,0 +1,68 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #3b4252;
+}
+
+.profile img {
+  float: left;
+  display: flex;
+  height: 315px;
+  margin-right: 35px;
+  margin-left: 50px;
+  border-radius: 30%;
+  box-shadow: 2px 4px 5px -4px rgba(0, 0, 0, 0.8);;
+}
+
+.heading-primary {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 35px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.heading-secondary {
+  font-weight: 300;
+  margin-top: -20px;
+  font-size: 16px;
+}
+.info {
+  left: 560px;
+  padding: 10px 10px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.03);
+  position: absolute;
+}
+.small {
+  font-size: 10px;
+  font-weight: 300;
+}
+.box {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.box ul {
+  margin-top: -10px;
+}
+.hobbies {
+  top: 250px;
+  left: 560px;
+  width: 300px;
+}
+.social {
+  top: 250px;
+  left: 900px;
+  width: 300px;
+}
+.social p ul {
+  margin-top: -10px
+}
+.list-header {
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 18px;
+}

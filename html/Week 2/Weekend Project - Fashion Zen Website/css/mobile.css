@@ -1,0 +1,145 @@
+@media only screen and (max-width: 1440px) {
+  .categories__box {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  #newest-products .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  #footer form .input {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #categories {
+    padding: 2rem 0;
+  }
+  #categories .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .categories__box {
+    margin-bottom: 1rem;
+  }
+  #hero .container {
+    text-align: center;
+  }
+  .hero__text {
+    padding: 20rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #newest-products .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #footer .container {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+  .footer__list:nth-child(1),
+  .footer__list:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .sale__text h3,
+  .sale__text p {
+    font-size: 2.4rem;
+  }
+  .sale__text {
+    display: inline-block;
+  }
+  #sale .container {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .product-card {
+    width: 150px;
+    justify-content: unset;
+  }
+  .product-card img {
+    height: 16rem;
+  }
+  .top-nav__links li {
+    margin: 0.3rem 0;
+    padding: 0 0.5rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .responsive {
+    display: inline-block;
+  }
+  #newest-products .flex ul {
+    display: none;
+  }
+  #newest-products .flex {
+    justify-content: space-around;
+  }
+  #coupon .container {
+    padding: 3rem;
+  }
+  .input {
+    width: 64%;
+  }
+  #navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar li {
+    padding: 0.2rem 1rem;
+  }
+  .top-nav {
+    display: none;
+  }
+  .hero__text .btn {
+    margin-top: 13rem;
+  }
+  #sale .container:nth-child(2) {
+    margin-top: 3rem;
+  }
+  .sale__product-box {
+    width: 14rem;
+  }
+  .sale__product-box img {
+    height: 120px;
+  }
+  #aside {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .container {
+    padding: 0;
+  }
+  #footer .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .hero__text {
+    padding: 5rem 0 0 0;
+  }
+  .hero__text .btn {
+    margin-top: 5rem;
+  }
+}

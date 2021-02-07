@@ -1,0 +1,50 @@
+/* Reset */
+
+:root {
+  /* Typography */
+  --font-size: 1.6rem;
+
+  /* Colors */
+  --primary-color: #15a66d;
+  --light-color: #e5e9f0;
+  --light-color2: #d8dee9;
+  --dark-color: #3b4252;
+  --darkest-color: #2e3440;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: var(--font-size);
+  color: var(--dark-color);
+  background: var(--light-color2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #808080;
+  height: 2000px;
+}
+.container {
+  position: relative;
+}
+.termspopup {
+  background-color: rgba(234, 67, 48, 0.9);
+  text-align: center;
+  height: 30px;
+  position: fixed;
+  width: 100%;
+  visibility: hidden;
+}
+.termspopup p {
+  margin-top: 5px;
+}
+.termspopup .close {
+  float: right;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+.btn {
+  padding: 10px 20px;
+  margin: 20px 100px;
+  background: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+}
+.btn1 {
+  top: 25%;
+}
+.btn2 {
+  top: 35%;
+}
+.btn3 {
+  top: 45%;
+}
+.termspopup:target {
+  visibility: visible;
+}
+.messagepopup {
+  width: 300px;
+  height: 140px;
+  background-color: #4b414c;
+  color: #fff;
+  position: fixed;
+  border-radius: 30px;
+  padding: 15px;
+  right: 1vh;
+  top: 85vh;
+  opacity: 0.6;
+  visibility: hidden;
+}
+.messagepopup:target {
+  visibility: visible;
+}
+.messagepopup a {
+  display: inline-block;
+}
+.message2popup {
+  position: absolute;
+  left: 1vh;
+  top: 85vh;
+  padding: 15px;
+  width: 320px;
+  height: 130px;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  visibility: hidden;
+}
+.message2popup:target {
+  visibility: visible;
+}
+.btn5 {
+  color: #ea991a;
+  text-decoration: none;
+  float: right;
+  margin-top: 30px;
+}

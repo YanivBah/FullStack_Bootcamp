@@ -1,0 +1,30 @@
+#side {
+  display: block;
+  text-align: center;
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+}
+#side img {
+  max-width: 500px;
+}
+#header {
+  height: 40px;
+}
+#header li a {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+#main {
+  max-width: 100%;
+  float: none;
+  margin-left: 0;
+}
+.boxleft,
+.boxright {
+  float: none;
+  width: 100%;
+}
+.box {
+  width: 100%;
+}

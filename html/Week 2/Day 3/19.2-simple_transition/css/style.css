@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 20px;
+  text-align: right;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #ebcb8b;
+  overflow: visible;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #a3be8c;
+  transform: translateX(-200px);
+  transition: all 1s ease-in-out;
+}
+
+.box:hover::before {
+  transform: translateX(0);
+  background-color: #bf616a;
+}

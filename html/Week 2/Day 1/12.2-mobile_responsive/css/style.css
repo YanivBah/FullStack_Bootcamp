@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.textbox {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #fff;
+  width: 300px;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .textbox {
+    display: block;
+    margin: 10px auto;
+  }
+}

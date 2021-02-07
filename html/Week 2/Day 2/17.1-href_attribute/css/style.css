@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+  font-size: 2vw;
+}
+a {
+  text-decoration: none;
+}
+p > a::after {
+  content: " (https://unsplash.com/)";
+}

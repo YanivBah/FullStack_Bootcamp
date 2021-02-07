@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  margin: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  border-radius: 30px;
+  padding: 20px;
+  border: 1px dotted #000;
+}
+.container > p {
+  margin-bottom: 15px;
+}
+.container > p > a[tooltip="link"] {
+  color: red;
+  font-weight: bold;
+  position: relative;
+}
+
+a[tooltip="link"]:hover::before {
+  content: "This link is A-M-A-Z-I-N-G!";
+  position: absolute;
+  width: 150px;
+  top: -30px;
+  left: -50px;
+  background-color: #fbf021;
+  color: #000;
+  text-align: center;
+  font-weight: normal;
+  font-size: 10px;
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: 1px solid #000;
+}

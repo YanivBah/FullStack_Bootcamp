@@ -1,0 +1,107 @@
+:root {
+  --color-dark: #434c5e;
+  --color-darker: #2e3440;
+  --color-light: #d8dee9;
+  --color-lighter: #eceff4;
+  --color-red: #bf616a;
+  --color-orange: #d08770;
+  --color-yellow: #ebcb8b;
+  --color-green: #a3be8c;
+  --color-purple: #b48ead;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--color-light);
+  color: var(--color-darker);
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--color-darker);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  width: 200px;
+  padding: 15px 0;
+  margin: 30px;
+  border: 1px solid var(--color-darker);
+  position: relative;
+  overflow: hidden;
+  /* transition: transfrom 0.7s ease-in-out; */
+}
+.btn1::before,
+.btn2::before,
+.btn3::before,
+.btn4::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.7s ease-in-out;
+}
+.btn1::before {
+  content: "Oh Yeah";
+  transform: translateY(-60px);
+}
+.btn2::before {
+  content: "";
+  transform: translate(-200px);
+}
+.btn3::before {
+  content: "";
+  transform: rotate(90deg) translate(-126px, 126px);
+}
+.btn4::before {
+  content: "Scale & Opacity";
+  transform: scale(3);
+}
+
+.btn1:hover::before,
+.btn2:hover::before,
+.btn3:hover::before,
+.btn4:hover::before {
+  visibility: visible;
+  transition: all 0.7s ease-in-out;
+}
+.btn1:hover::before {
+  background-color: var(--color-red);
+  transform: translateY(0px);
+}
+.btn2:hover::before {
+  background: var(--color-green);
+  transform: translate(0);
+  z-index: -1;
+}
+.btn3:hover::before {
+  background: var(--color-yellow);
+  transform: rotate(180deg) translate(0, 0);
+  z-index: -1;
+}
+
+.btn4:hover::before {
+  background: var(--color-darker);
+  color: var(--color-lighter);
+  transform: scale(1);
+}

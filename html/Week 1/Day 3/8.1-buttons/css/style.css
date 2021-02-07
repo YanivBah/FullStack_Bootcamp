@@ -1,0 +1,132 @@
+.main {
+  background-color: #34475e;
+  max-width: 980px;
+  height: 680px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  padding: 30px;
+  margin-right: 10px;
+}
+.btn-flat {
+  margin-right: 100px;
+  color: #fff;
+  text-decoration: 0;
+}
+.btn:last-child {
+  margin-right: 0px;
+}
+.btn1 {
+  background-color: #12fb78;
+  padding: 15px 50px;
+}
+.btn1:hover {
+  background-color: #0bcc5f;
+}
+.btn2 {
+  background-color: #e80c24;
+  padding: 10px 40px;
+}
+.btn2:hover {
+  background-color: #c40a20;
+}
+
+.btn3 {
+  background-color: #1a96d4;
+  padding: 6px 20px;
+}
+.btn3:hover {
+  background-color: #167fb4;
+}
+.btn-round {
+  margin-right: 100px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.btn4 {
+  background-color: #e87506;
+  padding: 15px 50px;
+}
+.btn4:hover {
+  background-color: #c46305;
+}
+.btn5 {
+  background-color: #ebd50b;
+  padding: 10px 40px;
+}
+.btn5:hover {
+  background-color: #ccb909;
+}
+
+.btn6 {
+  background-color: #7d8d8a;
+  padding: 6px 20px;
+}
+.btn6:hover {
+  background-color: #6f7d7a;
+}
+.btn-flat-ghost {
+  margin-right: 100px;
+  color: #fff;
+  text-decoration: 0;
+}
+.btn7 {
+  border: 3px solid #10fc7a;
+  padding: 15px 50px;
+}
+.btn7:hover {
+  background-color: #10fc7a;
+}
+.btn8 {
+  border: 3px solid #e80e25;
+  padding: 10px 40px;
+}
+.btn8:hover {
+  background-color: #e80e25;
+}
+
+.btn9 {
+  border: 3px solid #1a96d4;
+  padding: 6px 20px;
+}
+.btn9:hover {
+  background-color: #1a96d4;
+}
+.btn-round-ghost {
+  margin-right: 100px;
+  color: #fff;
+  text-decoration: 0;
+  border-radius: 30px;
+}
+.btn10 {
+  border: 3px solid #e87506;
+  padding: 15px 50px;
+}
+.btn10:hover {
+  background-color: #e87506;
+}
+.btn11 {
+  border: 3px solid #ebd50b;
+  padding: 10px 40px;
+}
+.btn11:hover {
+  background-color: #ebd50b;
+}
+
+.btn12 {
+  border: 3px solid #7d8d8c;
+  padding: 6px 20px;
+}
+.btn12:hover {
+  background-color: #7d8d8c;
+}
+h2 {
+  padding: 0;
+  margin: 0 0 30px 0;
+  color: white;
+}

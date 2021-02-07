@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.2-refactor_with_float</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/c1514f61dc.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  * {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #3b4252;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .clr {
+    clear: both;
+  }
+  
+  .profile {
+
+  }
+
+  .profile img {
+    float: left;
+    display: flex;
+    height: 315px;
+    margin-right: 35px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 30%;
+    box-shadow: 2px 4px 5px -4px rgba(0, 0, 0, 0.8);
+  }
+
+  .heading-primary {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 35px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+  }
+  .heading-secondary {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .info {
+    padding: 25px 25px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.03);
+    float: right;
+    width: 600px;
+  }
+  .small {
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .box {
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.9);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 120px;
+  }
+  .box ul {
+    margin-top: 4px;
+  }
+  .boxes {
+    float: right;
+    width: 600px;
+    }
+  .hobbies {
+    width: 47%;
+    padding: 10px 25px;
+    margin: -120px 10px 0 0;
+    float: left;
+  }
+  .social {
+    width: 47%;
+    margin: -120px 0 0 10px;
+    float: right;
+    padding: 10px 25px;
+  }
+
+  .list-header {
+    font-weight: 300;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+  .headers {
+    margin: 40px;
+    position: relative;
+    left: 60px;
+    top: 30px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="imgs/me.png" alt="Picture of myself">
+    </div>
+    <div class="headers">
+      <h1 id="header" class="heading-primary">My name is Yaniv Bahalker</h1>
+      <h2 class="heading-secondary">Soon <sub class="small">(Just 6 months...)</sub> to be Fullstack Developer</h2>
+    </div>
+    <br>
+    <div class="info">
+      <p>I'm 23. I found out this last year that programming really fascinating for me.
+        <br>
+        I love to learn new things, but (and this is a big one) only stuff that I found interesting.
+      </p>
+    </div>
+      <br>
+      <div class="clr"></div>
+      <div class="boxes">
+        <div class="box hobbies">
+          <span class="list-header">My hobbies are: </span>
+          <p>
+            <ul>
+              <li><i class="fas fa-camera"></i>  - Photographing.</li>
+              <li><i class="fas fa-hiking"></i>  - Outdoor and hiking. </li>
+              <li><i class="fas fa-music"></i>  - Music is like a coffee for me. </li>
+            </ul>
+          </p>
+        </div>
+    
+        <div class="box social">
+          <span class="list-header">Social links: </span>
+          <p>
+            <ul>
+              <li><i class="fab fa-facebook-square"></i> - <a href="https://www.facebook.com/yaniv.bahalker/" target="_blank">Facebook</a></li>
+              <li><i class="fab fa-github"></i> - <a href="https://github.com/YanivBah" target="_blank">GitHub</a></li>
+              <li><i class="far fa-images"></i> - <a href="https://yanivb.smugmug.com/" target="_blank">Photography Portfolio</a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+  </div>
+    
+  
+</body>
+</html>

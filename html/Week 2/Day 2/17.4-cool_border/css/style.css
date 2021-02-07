@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px;
+  color: #fff;
+}
+.blackbox {
+  display: inline-block;
+  height: 200px;
+  width: 500px;
+  background-color: #000000;
+  position: relative;
+}
+.blacbox1 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.blackbox1 p {
+  color: #fff;
+  margin: 80px 0;
+  font-size: 30px;
+}
+.blackbox:after,
+.blackbox:before,
+.blackbox1:before,
+.blackbox1:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.blackbox:after {
+  top: 10%;
+  left: 10%;
+  border-top: 3px orangered solid;
+  border-left: 3px orangered solid;
+}
+
+.blackbox:before {
+  bottom: 10%;
+  left: 10%;
+  border-bottom: 3px orangered solid;
+  border-left: 3px orangered solid;
+}
+.blackbox1:before {
+  top: 10%;
+  right: 10%;
+  border-top: 3px orangered solid;
+  border-right: 3px orangered solid;
+}
+.blackbox1:after {
+  bottom: 10%;
+  right: 10%;
+  border-bottom: 3px orangered solid;
+  border-right: 3px orangered solid;
+}
