@@ -77,3 +77,27 @@ John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and
    points. Like before, log the average winner to the console.
 5. Like before, change the scores to generate different winners, keeping in mind
    there might be draws.
+
+---
+
+# 4.4 - 7 BOOM
+
+Write a function that takes one argument n, an integer Print out all the numbers
+between 1 to n. If the number is only divisible by 7 print “BOOM” If the number
+is divisible by 7 and also includes the digit 7 print “BOOM-BOOM”. If either of
+the above cases print the number. 1,2,3,4,5,6,
+BOOM-BOOM,8,9,10,11,12,13,BOOM,15,16,17,18. Use the includes method to find out
+if the number includes a 7.
+
+---
+
+# 4.5 - Leap Year
+
+Create a JS function to determine whether or not a given year is a leap year.
+The function should take a year as an argument: Determine whether or not it is a
+leap year. If the given year is a leap year, the program should print "It is
+indeed a leap year", otherwise the program will print "This is not a leap year.
+
+Every year that is divisible by 4 is a leap year except for the ones that are
+also divisible by 100, unless it is divisible by 400. Example: 2012 is a leap
+year 2100 is not But 2400 is.
