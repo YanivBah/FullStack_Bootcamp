@@ -29,3 +29,51 @@
    same populations)
 
 ---
+
+# 4.1 - Number of Siblings
+
+1. Declare a variable 'numSiblings' based on a prompt inputlike this:
+   `prompt('How many siblings do you have?');`
+2. If you have one sibling, log to the console `1 sibling!` (use loose equality
+   == for now).
+3. Use an else-if block to log `More than 1 sibling` in case `numSiblings` is
+   greater than 1.
+4. Use an else block to log `No siblings` (this block will be executed when
+   `numSiblings` is 0 or any other value).
+5. Test the code with different values of `numSiblings`, including 1 and 0.
+6. Change == to ===, and test the code again, with the same values of
+   `numSiblings`. Notice what happens when there is exactly 1 sibling! Why is
+   this happening?
+7. Finally, convert `numSibling` to a number, and watch what happens now when
+   you input 1
+
+---
+
+# 4.2 - Grade Assigner
+
+Create a function that takes 1 argument, a number score. Returns either “A”,
+”B”, “C”, “D”, “F”. score of:
+
+- 0-64 is a “F”
+- 65-69 is a “D”
+- 70-79 is a “C”
+- 80-89 is a “B”
+- 90-100 is an “A"
+
+---
+
+# 4.3 - Basketball Score
+
+John and Mike both play basketball in different teams. In the latest 3 games,
+John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and
+123 points.
+
+1. Calculate the average score for each team
+2. Decide which teams wins in average (highest average score), and print the
+   winner to the console. Also include the average score in the output.
+3. Then change the scores to show different winners. Don't forget to take into
+   account there might be a draw (the same average score)
+4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105
+   points. Like before, log the average winner to the console.
+5. Like before, change the scores to generate different winners, keeping in mind
+   there might be draws.
