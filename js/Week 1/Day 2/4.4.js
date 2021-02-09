@@ -14,4 +14,6 @@ function sevenBoom (n) {
 
 sevenBoom(18);
 
+console.log(array);
+
 console.table(array);

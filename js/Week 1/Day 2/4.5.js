@@ -6,6 +6,6 @@ function leapYear(year) {
   }
 }
 
-leapYear(2012);
-leapYear(2100);
-leapYear(2400);
+leapYear(4);
+// leapYear(2100);
+// leapYear(2400);
