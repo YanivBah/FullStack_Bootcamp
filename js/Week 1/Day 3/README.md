@@ -1,26 +1,22 @@
 # 5.1 - Country to live in
 
 1. Create a function called ‘countryToLiveIn’ that takes 4 parameters:
-   `language`, `isIsland`, `population` and `country`.
+`language`, `isIsland`, `population` and `country`.
+isIsland’s argument value should be true or false.
+population’s argument value should be an integer.
+country should be a string of a country.
+Language should be a string.
 
-isIsland’s argument value should be true or false. population’s argument
-valueshould be an integer. country should be a string of a country. Language
-should be a string.
+2. Let's say Sarah is looking for a new country to live in. 
+She wants to live in a country that speaks English, has less than 50 million people and is not an island.
 
-2. Let's say Sarah is looking for a new country to live in. She wants to live in
-   a country that speaks English, has less than 50 million people and is not an
-   island.
+3. Write an if statement inside your function to help Sarah figure out if your country is right for her.
+You will need to write a condition that accounts for all of Sarah's criteria.
+Take your time with this, and check part of the solution if necessary.
 
-3. Write an if statement inside your function to help Sarah figure out if your
-   country is right for her. You will need to write a condition that accounts
-   for all of Sarah's criteria. Take your time with this, and check part of the
-   solution if necessary.
+4. If yours is the right country, log a string like this: `You should live in Finland`. If not, log `Finland does not meet your criteria`.
 
-4. If yours is the right country, log a string like this: 'You should live in
-   Finland. If not, log 'Finland does not meet your criteria'.
-
-5. If your country does not meet all the criteria, go back and temporarily
-   change some argument values in order to make the condition true.
+5. If your country does not meet all the criteria, go back and temporarily change some argument values in order to make the condition true.
 
 ---
 
@@ -28,10 +24,13 @@ should be a string.
 
 1. Create a function that takes one parameter, a language.
 
-2. Use a switch statement to log the following string for thegiven
-   'language':mandarin: 'MOST number of native speakers!'spanish: '2nd place in
-   number of native speakers'english: '3rd place'hindi: 'Number 4'arabic: '5th
-   most spoken language'for all other simply log 'Not in the top 5'
+2. Use a switch statement to log the following string for the given 'language':
+Mandarin: `MOST number of native speakers!`
+Spanish: `2nd place in number of native speakers`
+English: `3rd place`
+Hindi: `Number 4'`
+Arabic: `5th most spoken language`
+for all other simply log `Not in the top 5`.
 
 ---
 
