@@ -84,3 +84,24 @@ Here is a candyStore object:
 4. Implement the following buy function: The function should add the candy price
    to the cashRegister, and decrease the amount property of the relevant candy.
    function buy(candyStore, id){ }
+
+---
+
+# 7.5 - Candy Store
+
+Create a function that takes one argument, an array. Use this array:
+
+const array = ["Hello", "Good Day", "Your Welcome", "hotdog", "hamburgers"];
+
+to count over all the letters and return an object with the letter as the key
+and the letter count as the value.
+
+Expected output:{ h: 3, e: 4, l: 3, o: 7, g: 3, d: 3, a: 2, y: 2, u: 2, r: 3, w:
+1, c: 1, m: 2, t: 1, b: 1, s: 1 }
+
+---
+
+# 7.6 - Object iteration
+
+1. Create a function that receives 1 argument, an object and returns a new
+   object with the properties and values swapped.
