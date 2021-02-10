@@ -9,4 +9,4 @@ console.log(Array.isArray(arr1));
 // Q6
 const arr2 = [...arr1];
 
-const arr3 = arr1.splice(0,49);
+const arr3 = arr1.splice(0,100);
