@@ -66,3 +66,37 @@ slow your code is.
 
 4. Create your own function that will receive from one of itsarguments a
    callback function.
+
+---
+
+# 9.2 - Sorting Numbers
+
+Use the array of numbers below and answer the following questions:
+`const numbers = [1, -5, 666, 2, 400, 11];`
+
+1. Sort the array of numbers from descending to ascending order.
+2. Sort the array of numbers from descending to ascending order.
+
+---
+
+# 9.3 - Sorting Strings
+
+Answer the following questions:
+
+a. Array of words
+`const foods = ["falafel", "sabich", "hummus", "pizza with extra pineapple"];`
+
+1. Sort the array of strings from descending to ascending order
+1. Sort the array of strings from ascending to descending order
+
+b. Lets sort an array of words that includes a word with an uppercase:
+`const foodsWithUpperCase = ["falafel","Sabich","hummus","pizza with extra pineapple"];`
+
+1. Sort the array of strings from descending to ascending order
+1. Sort the array of strings from ascending to descending order
+
+c. Longest Word
+`const words = ["apple", "supercalifragilisticexpialidocious", "hi", "zoo"];`
+
+1. Sort the array of strings from the longest word to the shortest word only
+   using the sort function
