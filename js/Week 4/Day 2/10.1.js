@@ -44,3 +44,5 @@ const newReleasesMap = newReleases.map(function (id, index, array) {
   const obj = {id: array[index].id, title: array[index].title,}
   console.log(obj);
 });
+
+console.log(newReleases);
