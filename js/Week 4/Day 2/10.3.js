@@ -9,6 +9,7 @@ console.log(returnNames);
 const bornBefore1990 = data.map(function (id,index,array) {
   return Date.parse(1-1-1990) > Date.parse(array[index].birthday) ? array[index] : '';
 })
+console.log(bornBefore1990);
 
 const returnFood = () => {
   const obj = {};
