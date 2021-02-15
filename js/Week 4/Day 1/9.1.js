@@ -8,11 +8,12 @@ console.log(isString('Hello', whatType));
 
 
 const firstWordUpperCase = function(string, callBack) {
-  return callBack(string.charAt(0).toUpperCase() + string.slice(1));
+  const strSplit = string.split(' ')[0];
+  return callBack(strSplit.toUpperCase() + string.slice(strSplit.length));
 }
 
 const dashes = function(string) {
   return string.split(' ').join('-');
 }
 
-console.log(firstWordUpperCase('what the hell?', dashes));
+console.log(firstWordUpperCase('how are you man?', dashes));
