@@ -61,3 +61,37 @@ const food1 = ["Fries", "Ice-cream", "Pizza", "Olives", "Hamburgers"];
 Create a function that takes these two arrays as arguments. Compare these two
 arrays using 2 for loops and return the items that are the same. If none are the
 same return false.
+
+---
+
+# 14.1 - get sum
+
+- Note: We ask you not to solve the bug by finding it with your eyes but to use
+  the debugging tools we've learned!
+
+What is wrong with this code?
+
+1. First find the line that contains the problem. Write it down.
+2. Which debug method did you use to find the bug?
+3. Explain the bug in your own words.
+4. Fix the code and submit it all.
+
+function getSum(arr1, arr2){
+
+const sum = 0;
+
+for (let i=0; i < arr1.length; i++){
+
+    sum += arr1[i];
+
+}
+
+for (let i=0; i < arr2.length; i++){
+
+    sum += arr2[i];
+
+}
+
+}
+
+getSum([1,2,3][5,66,23]);
