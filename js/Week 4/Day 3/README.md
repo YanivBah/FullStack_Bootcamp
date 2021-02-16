@@ -26,3 +26,25 @@ Neighbour: Norway
 Neighbour: Sweden
 
 Neighbour: Russia
+
+---
+
+# 13.2 - While Loop
+
+1. Recreate the challenge from the exercise 6.4- looping_with_arrays ,but this
+   time using a while loop.
+
+- Create an array containing 4 population values of 4 countries of your choice.
+  Store this array into a variable called 'populations'
+- Create a function called ‘populationPercentages’ that takes the population
+  array as an argument.
+- Inside the function, create an empty array called ‘percentages’.
+- Use a for loop to iterate over the population array you received as an
+  argument..
+- On each iteration use the function we created earlier (module 3,
+  ex.3.3-declarations vs expressions) for each element of the array.
+- Push the result to the ‘percentages’ array.
+- Return from the function the ‘percentages’ array.
+
+2. Reflect on what solution you like better for this task: the for loop or the
+   while loop?
