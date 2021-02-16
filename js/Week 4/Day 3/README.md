@@ -48,3 +48,16 @@ Neighbour: Russia
 
 2. Reflect on what solution you like better for this task: the for loop or the
    while loop?
+
+---
+
+# 13.3 - compare the arrays
+
+You are given two arrays:
+
+const food = ["Noodle", "Pasta", "Ice-cream", "Meat", "Cucumber", "Olives"];
+const food1 = ["Fries", "Ice-cream", "Pizza", "Olives", "Hamburgers"];
+
+Create a function that takes these two arrays as arguments. Compare these two
+arrays using 2 for loops and return the items that are the same. If none are the
+same return false.
