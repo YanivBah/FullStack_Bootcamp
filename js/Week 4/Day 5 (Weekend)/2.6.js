@@ -1,7 +1,7 @@
 // Ex2.6 - Years and Centuries
 const centuryFromYear = (year) => {
-  const cent = year / 100;
-  return year %100 !== 0 ? Math.trunc(cent + 1) : Math.trunc(cent);
+  const cent = Math.trunc(year / 100);
+  return year %100 !== 0 ? cent + 1 : cent;
 }
 
 console.log(centuryFromYear(1705));
