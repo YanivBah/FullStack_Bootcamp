@@ -5,6 +5,6 @@ const fibonacci = (n) => {
     let next = arr[i-1] + arr[i-2]
     arr.push(next);
   }
-  return arr.join();
+  return arr[arr.length-1];
 }
 console.log(fibonacci(12));

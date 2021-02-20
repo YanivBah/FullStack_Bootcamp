@@ -1,5 +1,5 @@
 const toWeirdCase = (str) => {
-  const arr = str.split(' '); //[ 'Weird', 'string', 'case' ]
+  const arr = str.split(' ');
   for (let i = 0 ; i < arr.length ; i++) {
     const newArr = arr[i].split('');
     newArr.reduce((acc, current, index) => {index === 0 || index %2 === 0 ? newArr[index] = newArr[index].toUpperCase() : '' }, 0)

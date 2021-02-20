@@ -1,6 +1,6 @@
-// Ex5.8 - shortest words version 2
-const shortestWord = (str) => {
+// Ex5.8 - longest words version 2
+const longestWord = (str) => {
   return str.split(' ')
   .reduce((long, short) => long.length > short.length ? long : short);}
 
-console.log(shortestWord('I am str'));
+console.log(longestWord('I am str'));

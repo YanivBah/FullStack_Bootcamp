@@ -1,12 +1,10 @@
 // Ex3.2 - People on the Bus
 const peopleOnTheBus = (arr) => {
-  let getOn = 0;
-  let getOff = 0;
-  for (let i = 0; i < arr.length ; i++) {
-    getOn += arr[i][0];
-    getOff += arr[i][1];
-  }
-  return getOn - getOff >= 0 ? getOn - getOff : '';
+  let people = 0;
+  arr.forEach((val) => {
+    people += val[0];people -= val[1];
+  });
+  return people >= 0 ? people : '';
 }
 
 console.log(peopleOnTheBus(
