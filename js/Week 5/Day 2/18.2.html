@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18.2</title>
+  </head>
+  <body>
+    <script>
+      document.body.style.textAlign = "center";
+      document.body.style.fontFamily = "Arial, sans-serif";
+      document.body.style.padding = "0 100px";
+      // Navbar
+      const navbar = document.createElement("div");
+      navbar.style.display = "flex";
+      navbar.style.justifyContent = "space-around";
+      navbar.style.background = "#b7c7b1";
+      const navList = document.createElement("ul");
+      const navItem1 = document.createElement("li");
+      navItem1.style.display = "inline-block";
+      navItem1.style.marginLeft = "20px";
+      navItem1.style.marginRight = "20px";
+      const navLink1 = document.createElement("a");
+      navLink1.innerText = "Home";
+      navLink1.href = "#";
+      navLink1.style.textDecoration = "none";
+      navLink1.style.color = "white";
+      navLink1.style.textShadow = "0px 0px 3px black";
+      const navItem2 = document.createElement("li");
+      navItem2.style.display = "inline-block";
+      navItem2.style.marginLeft = "20px";
+      navItem2.style.marginRight = "20px";
+      const navLink2 = document.createElement("a");
+      navLink2.innerText = "Blog";
+      navLink2.href = "#";
+      navLink2.style.textDecoration = "none";
+      navLink2.style.color = "white";
+      navLink2.style.textShadow = "0px 0px 3px black";
+      const navItem3 = document.createElement("li");
+      navItem3.style.display = "inline-block";
+      navItem3.style.marginLeft = "20px";
+      navItem3.style.marginRight = "20px";
+      const navLink3 = document.createElement("a");
+      navLink3.innerText = "Contact";
+      navLink3.href = "#";
+      navLink3.style.textDecoration = "none";
+      navLink3.style.color = "white";
+      navLink3.style.textShadow = "0px 0px 3px black";
+      const navItem4 = document.createElement("li");
+      navItem4.style.display = "inline-block";
+      navItem4.style.marginLeft = "20px";
+      navItem4.style.marginRight = "20px";
+      const navLink4 = document.createElement("a");
+      navLink4.innerText = "About";
+      navLink4.href = "#";
+      navLink4.style.textDecoration = "none";
+      navLink4.style.color = "white";
+      navLink4.style.textShadow = "0px 0px 3px black";
+      navItem1.appendChild(navLink1);
+      navItem2.appendChild(navLink2);
+      navItem3.appendChild(navLink3);
+      navItem4.appendChild(navLink4);
+      navList.appendChild(navItem1);
+      navList.appendChild(navItem2);
+      navList.appendChild(navItem3);
+      navList.appendChild(navItem4);
+      navbar.appendChild(navList);
+      document.body.appendChild(navbar);
+
+      // Header
+      const header = document.createElement("h1");
+      header.innerText = "This Website is Pure JavaScript!";
+      header.style.fontSize = "40px";
+      document.body.appendChild(header);
+
+      // paragraph
+      const paragraph = document.createElement("p");
+      paragraph.innerText =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut reprehenderit ipsa facilis nulla at vitae numquam voluptatibus tempore recusandae error ab dicta tempora minima officia saepe eaque nam ex autem consectetur animi laudantium, nobis id reiciendis! Magnam, id ipsam? Eligendi quos cumque id molestiae illo sed voluptatem, itaque ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut reprehenderit ipsa facilis nulla at vitae numquam voluptatibus tempore recusandae error ab dicta tempora minima officia saepe eaque nam ex autem consectetur animi laudantium, nobis id reiciendis! Magnam, id ipsam? Eligendi quos cumque id molestiae illo sed voluptatem, itaque ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut reprehenderit ipsa facilis nulla at vitae numquam voluptatibus tempore recusandae error ab dicta tempora minima officia saepe eaque nam ex autem consectetur animi laudantium, nobis id reiciendis! Magnam, id ipsam? Eligendi quos cumque id molestiae illo sed voluptatem, itaque ducimus.";
+      paragraph.style.padding = "0 100px";
+      document.body.appendChild(paragraph);
+
+      // Button
+      const button = document.createElement("button");
+      button.innerText = "👁👁";
+      button.style.padding = "1rem 3rem";
+      button.style.margin = "6rem 0 0 0";
+      button.style.fontSize = "30px";
+      button.style.borderRadius = "10px";
+      button.style.border = "1px solid gray";
+      button.style.outline = "unset";
+      button.style.transform = "rotate(0deg)";
+      button.style.transition = "all 1.8s linear";
+      button.addEventListener("click", () => {
+        if (button.style.transform === "rotate(0deg)") {
+          button.style.transform = "rotate(360deg) scale(2)";
+          button.style.background = "#FF0F00";
+          header.innerText = "🧙🏻YOU'RE A WIZARD!🧙🏻";
+          header.style.fontSize = "50px";
+          navbar.style.display = "none";
+          paragraph.innerText = `
+– Avada Kedavra: the Killing Curse.
+– Crucio: causes the victim extreme pain.
+Imperio: removes the victim’s free will and ability to make decisions for him- or herself.
+          `;
+          paragraph.style.color = `white`;
+          paragraph.style.textShadow = "0px 0px 0.2px black";
+        } else {
+          header.innerText = "This Website is Pure JavaScript!";
+          button.style.transform = "rotate(0deg)";
+          button.style.background = "#FFFFFF";
+          header.style.fontSize = "40px";
+          navbar.style.display = "flex";
+          paragraph.innerText =
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut reprehenderit ipsa facilis nulla at vitae numquam voluptatibus tempore recusandae error ab dicta tempora minima officia saepe eaque nam ex autem consectetur animi laudantium, nobis id reiciendis! Magnam, id ipsam? Eligendi quos cumque id molestiae illo sed voluptatem, itaque ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut reprehenderit ipsa facilis nulla at vitae numquam voluptatibus tempore recusandae error ab dicta tempora minima officia saepe eaque nam ex autem consectetur animi laudantium, nobis id reiciendis! Magnam, id ipsam? Eligendi quos cumque id molestiae illo sed voluptatem, itaque ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut reprehenderit ipsa facilis nulla at vitae numquam voluptatibus tempore recusandae error ab dicta tempora minima officia saepe eaque nam ex autem consectetur animi laudantium, nobis id reiciendis! Magnam, id ipsam? Eligendi quos cumque id molestiae illo sed voluptatem, itaque ducimus.";
+          paragraph.style.textShadow = "unset";
+          paragraph.style.color = "black";
+        }
+      });
+      document.body.appendChild(button);
+    </script>
+  </body>
+</html>
