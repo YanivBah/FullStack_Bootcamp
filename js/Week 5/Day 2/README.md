@@ -37,3 +37,11 @@ const myFourthDiv = document.querySelector("#myFourthDiv");
 
 Is there a better way you can store the individual elements with giving them
 different names?
+
+---
+
+# 18.1 - Smiley
+
+Create a webpage with one field and one button. The user can choose the number
+of smileys, and you have to make them appear on the screen. If the user enters
+an input that is not a number show him an error message.

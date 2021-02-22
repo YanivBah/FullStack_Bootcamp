@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>17.2</title>
+  </head>
+  <style>
+    .container {
+      margin: 0 auto;
+      padding-top: 3rem;
+      text-align: center;
+      background: #d8dee9;
+      min-height: 700px;
+      max-width: 800px;
+    }
+    #textarea {
+      width: 300px;
+      height: 200px;
+    }
+    button {
+      padding: 0.5rem 3rem;
+    }
+    input {
+      width: 50px;
+      padding: 0.5rem;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="">
+        <p>How many smileys do you want to see?</p>
+        <input type="number" name="number" id="number" required />
+        <button type="button">Look at the M-A-G-I-C!</button>
+      </form>
+    </div>
+
+    <script>
+      // var nameValue = document.getElementById("uniqueID").value;
+      const submit = document.querySelector("button[type='button']");
+      const numberText = document.querySelector("input[type='number']");
+      const smileys = (number = 0) => {
+        const container = document.querySelector(".container");
+        const smiley = `<span style="font-size: 70px; margin: 10px;">😁</span>`;
+        const element = document
+          .createRange()
+          .createContextualFragment(smiley.repeat(number));
+        container.appendChild(element);
+      };
+      numberText.addEventListener("input", () => {
+        submit.addEventListener("click", () => smileys(numberText.value));
+      });
+    </script>
+  </body>
+</html>
