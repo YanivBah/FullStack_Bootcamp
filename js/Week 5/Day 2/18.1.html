@@ -39,18 +39,23 @@
     <script>
       const submit = document.querySelector("button[type='button']");
       const numberText = document.querySelector("input[type='number']");
+
       const smileys = (number = 0) => {
-        console.log(number);
         const container = document.querySelector(".container");
-        const smiley = `<span style="font-size: 70px; margin: 10px;">😁</span>`;
-        const element = document
-          .createRange()
-          .createContextualFragment(smiley.repeat(number));
-        container.appendChild(element);
+        const smiley = `😁`;
+        let el;
+        if (!document.querySelector("span")) {
+          el = document.createElement("span");
+        } else {
+          el = document.querySelector("span");
+        }
+        el.style.fontSize = "70px";
+        el.style.margin = "10px";
+        el.innerText += smiley.repeat(number);
+        container.appendChild(el);
       };
-      numberText.addEventListener("input", () => {
-        submit.addEventListener("click", () => smileys(numberText.value));
-      });
+
+      submit.addEventListener("click", () => smileys(numberText.value));
     </script>
   </body>
 </html>
