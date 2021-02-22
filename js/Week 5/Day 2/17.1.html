@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>17.1</title>
+    <style>
+      .container {
+        text-align: center;
+      }
+      button {
+        padding: 1rem 3rem;
+        margin: 5rem auto;
+        display: block;
+      }
+      h1 {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello World</h1>
+      <button class="increase">+</button>
+
+      <button class="decrease">-</button>
+    </div>
+
+    <script>
+      const plus = document.querySelector(".increase");
+      const minus = document.querySelector(".decrease");
+      const header = document.querySelector("h1");
+      let fontSize = 25;
+
+      function changeFontSize(number) {
+        if (fontSize > 6 && fontSize < 100) {
+          fontSize = eval(fontSize + number);
+          header.style.fontSize = fontSize + "px";
+        }
+      }
+
+      plus.addEventListener("click", () => changeFontSize(1));
+      minus.addEventListener("click", () => changeFontSize(-1));
+    </script>
+  </body>
+</html>
