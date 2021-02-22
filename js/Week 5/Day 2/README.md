@@ -12,3 +12,28 @@ Create a webpage that has part of an application process for a job. This page
 should have a text area field and a button. Your user must enter at least 100
 characters before clicking the button. If he didn’t, please give him the
 appropriate message. (using alert is forbidden)
+
+---
+
+# 17.3 - Selecting all elements
+
+You have these elements in your html file:
+
+<div id="myFirstDiv"></div>
+<div id="mySecondDiv"></div>
+<div id="myThridDiv"></div>
+<div id="myFourthDiv"></div>
+
+Somebody selected the elements and stored them into individual variables like
+this:
+
+const myFirstDiv = document.querySelector("#myFirstDiv");
+
+const mySecondDiv = document.querySelector("#mySecondDiv");
+
+const myThirdDiv = document.querySelector("#myThirdDiv");
+
+const myFourthDiv = document.querySelector("#myFourthDiv");
+
+Is there a better way you can store the individual elements with giving them
+different names?
