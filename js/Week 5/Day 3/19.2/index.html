@@ -47,49 +47,61 @@
     <div class="container">
       <h1>Please enter the next numbers:</h1>
       <h2>7 9 1 9 9 7</h2>
-      <form action="" onsubmit="return chkCode();">
+      <form action="" onsubmit="return codeVerification();">
         <input
-          type="text"
+          type="number"
+          data-number="0"
+          ;
           name="code"
           id="code"
-          maxlength="1"
           autofocus
           autocomplete="off"
+          onkeydown="return event.keyCode !== 69"
         />
         <input
-          type="text"
+          type="number"
+          data-number="1"
+          ;
           name="code"
           id="code"
-          maxlength="1"
           autocomplete="off"
+          onkeydown="return event.keyCode !== 69"
         />
         <input
-          type="text"
+          type="number"
+          data-number="2"
+          ;
           name="code"
           id="code"
-          maxlength="1"
           autocomplete="off"
+          onkeydown="return event.keyCode !== 69"
         />
         <input
-          type="text"
+          type="number"
+          data-number="3"
+          ;
           name="code"
           id="code"
-          maxlength="1"
           autocomplete="off"
+          onkeydown="return event.keyCode !== 69"
         />
         <input
-          type="text"
+          type="number"
+          data-number="4"
+          ;
           name="code"
           id="code"
-          maxlength="1"
           autocomplete="off"
+          onkeydown="return event.keyCode !== 69"
         />
         <input
-          type="text"
+          type="number"
+          data-number="5"
+          ;
           name="code"
           id="code"
-          maxlength="1"
           autocomplete="off"
+          onkeydown="return event.keyCode !== 69"
         />
         <button type="submit" class="submit">Verify</button>
       </form>
