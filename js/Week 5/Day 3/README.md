@@ -37,3 +37,19 @@ are 6 inputs to fill out.
 Create a webpage that has an input field for the user’s age and a button. If the
 user enters a number above 18, make the text “you can drink appear”. If the user
 enters a number below 18, make the text “you’re too young” appear.
+
+---
+
+# 21.3 - forEach and DOM
+
+You get an array of objects of users from your database: const users = [ { id:
+167464, firstName: "Jimmy", lastName: "Arnold", email: "jimmya@gmail.com", }, {
+id: 578447, firstName: "Martha", lastName: "Goldman", email: "gold@hotmail.com",
+}, { id: 864578, firstName: "Tim", lastName: "Burton", email:
+"timmy.hotmail.com", }, ];
+
+1. Loop over the array with the forEach method and dynamically create an ordered
+   list of the first and last names from the objects.
+2. Remove the bullet points of the ordered list with javaScript.
+3. Create a custom data attribute called “data-id” and attach the id value to
+   each li.
