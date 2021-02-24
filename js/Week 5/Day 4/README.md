@@ -59,3 +59,9 @@ Things to think about
 - To move the car’s do not use the click event. Use the ‘keyup’ event.
 - Find a way to announce the winner of the race.
 - Find a way to restart the game.
+
+---
+
+# 23.1 - Tickling Clock
+
+Create a webpage that has a ticking clock with the hours, minutes and seconds.
