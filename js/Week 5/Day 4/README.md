@@ -8,3 +8,36 @@ change information, give him the possibility to change the information and ask
 again for his confirmation.
 
 ---
+
+# 22.2 - Checkbox
+
+Create a webpage that has a checkbox. If the checkbox is checked, make a photo
+appear. If it is not, make it disappear.
+
+---
+
+# 22.3 - Guess My Letter
+
+Lets create a small game that the user needs to guess a random letter. Do not
+spend too much time styling the page.
+
+Generate a random letter and create the following logic depending if the user
+guessed the right letter or not: User guessed it right • Display a message that
+the user was right. • The message should be in the color green. • Show the right
+letter to the user. • Display a message if he wants to play again with a confirm
+button. • If the user wants to play again reset the DOM as it was in the
+beginning.
+
+User guessed wrong • Display a message that the user got it wrong. • The message
+should be in the color red. • Display all the letters the user has guessed •
+User cannot type the same letter twice. If the user did so, display a message
+that he already guessed the letter.
+
+Constraints • A user can only guess a valid alphabetical letter. If the user
+types a non alphabetical letter, display a message that this is not allowed. •
+When the game is finished, a user cannot guess a letter until he presses the
+confirm button to start a new game. • show guesses • If letter already guessed
+message to them • If letter is not the guess then display a message wrong guess
+• If letter is you are correct message and display the righ right key then show
+an option to start the game again. • When asking for a new game, user is not
+able to enter anymore keys until he confirms.
