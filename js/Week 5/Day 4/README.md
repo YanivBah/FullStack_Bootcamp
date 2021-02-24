@@ -41,3 +41,21 @@ message to them • If letter is not the guess then display a message wrong gues
 • If letter is you are correct message and display the righ right key then show
 an option to start the game again. • When asking for a new game, user is not
 able to enter anymore keys until he confirms.
+
+---
+
+# 22.4 - Race
+
+We will create a fun game that lets 2 players race against each other.
+
+Things to think about
+
+- We need to update a player’s position by moving the ‘active’ class from one
+  ‘td’ to the next one. Of course there are other solutions to implement this
+  game. Using a table and a CSS class is one option. But we will stick to this
+  one.
+- We need a way for JavaScript to update the board state. Create simple
+  JavaScript functions that update’s a player’s position.
+- To move the car’s do not use the click event. Use the ‘keyup’ event.
+- Find a way to announce the winner of the race.
+- Find a way to restart the game.
