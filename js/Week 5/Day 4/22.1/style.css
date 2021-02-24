@@ -1,0 +1,25 @@
+body {
+  background: #2e3440;
+}
+
+.container {
+  max-width: 800px;
+  height: 500px;
+  background: #3b4252;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-items: center; */
+  align-items: center;
+  /* align-content: center; */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+button[type="submit"] {
+  display: block;
+  margin: 1rem;
+}
