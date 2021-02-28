@@ -54,3 +54,11 @@ function Pokemon(pokemonName, pokemonType, pokemonAttackList){
   this.attackList = pokemonAttackList;
 }
 ```
+
+---
+
+# 27.3 - Build your own methods
+
+1. Build your own filter method with the help of prototypes
+2. Build your own find method with the help of prototypes
+3. Build your own reduce method with the help of prototypes
