@@ -32,3 +32,38 @@ Create an object with a name property. The object should also have a method that
 prints its name, and another method that prints its name after a second with the
 help of setTimeOut. in this exercise, you are not allowed to use arrow
 functions.
+
+---
+
+# 28.3 - Heroes
+
+We have an array of super heroes objects:
+
+```sh
+const wonderWoman = {
+  name: "Diana Prince"
+}
+const batman = {
+  name: "Bruce Wayne"
+}
+
+const superHeroes = [wonderWoman, batman];
+```
+
+and a print name function:
+
+```sh
+function printName() {
+  console.log(`my name is ${this.name}`);
+}
+```
+
+We want to print the all heroes names. Implement the printHeroes function:
+
+- Note: you cannot change the super heroes objects
+
+```sh
+function printHeroes(heroes, printFunc) {
+  //add your code here
+}
+```
