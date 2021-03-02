@@ -1,34 +1,31 @@
-const peopleInfo = {};
+const peopleInfo = [];
 let count = 0;
 
 const fetchData = async (url = 'http://swapi.dev/api/people/') => {
-  return await fetch(url);
-}
-
-const checkStatus = (response) => {
-  if (!response.ok) throw new Error(`Status Code Error: ${response.status}`);
-  return response.json();
+  const data = await fetch(url);
+  if (!data.ok) throw new Error(`Status Code Error: ${response.status}`);
+  return data.json();
 }
 
 const printPeople = async (data) => {
+  const test = await data;
   console.log('Loading data');
-  for (let person of data.results) {
+  for (let person of test.results) {
     peopleInfo[count] = {};
     peopleInfo[count].name = person.name;
     peopleInfo[count].height = person.height;
     peopleInfo[count].hair_color = person.hair_color;
     let planet = await fetchData(person.homeworld);
-    planet = await planet.json();
-    peopleInfo[count].planet = planet.name;
-    peopleInfo[count].population = planet.population;
+    peopleInfo[count].planet = {
+      name: planet.name,
+      population: planet.population,}
     count++;
   }
+  console.log(peopleInfo);
   createTable();
 }
 
-fetchData()
-  .then(checkStatus)
-  .then(printPeople);
+printPeople(fetchData());
 
 const createTable = () => {
   const table = document.createElement('table');
@@ -58,31 +55,30 @@ const createTable = () => {
   thead.appendChild(newtr);
   table.appendChild(thead);
   const tbody = document.createElement('tbody');
-
-  for (const key in peopleInfo) {
-    // peopleInfo[key];
+  
+  peopleInfo.forEach(people => {
     const currentTR = document.createElement('tr');
     const nameTD = document.createElement('td');
-    nameTD.textContent = `${peopleInfo[key].name}`;
+    nameTD.textContent = `${people.name}`;
     currentTR.appendChild(nameTD);
     tbody.appendChild(currentTR);
     const hair_colorTD = document.createElement('td');
-    hair_colorTD.textContent = `${peopleInfo[key].hair_color}`;
+    hair_colorTD.textContent = `${people.hair_color}`;
     currentTR.appendChild(hair_colorTD);
     tbody.appendChild(currentTR);
     const heightTD = document.createElement('td');
-    heightTD.textContent = `${peopleInfo[key].height}cm`;
+    heightTD.textContent = `${people.height}cm`;
     currentTR.appendChild(heightTD);
     tbody.appendChild(currentTR);
     const planetTD = document.createElement('td');
-    planetTD.textContent = `${peopleInfo[key].planet}`;
+    planetTD.textContent = `${people.planet.name}`;
     currentTR.appendChild(planetTD);
     tbody.appendChild(currentTR);
     const populationTD = document.createElement('td');
-    populationTD.textContent = `${peopleInfo[key].population}`;
+    populationTD.textContent = `${people.planet.population}`;
     currentTR.appendChild(populationTD);
     tbody.appendChild(currentTR);
-  }
+  });
   table.appendChild(tbody);
 
   document.body.appendChild(table);
