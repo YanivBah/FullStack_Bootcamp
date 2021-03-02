@@ -1,7 +1,7 @@
 const peopleInfo = [];
 let count = 0;
 
-const fetchData = async (url = 'http://swapi.dev/api/people/') => {
+const fetchData = async (url = 'https://swapi.dev/api/people/') => {
   const data = await fetch(url);
   if (!data.ok) throw new Error(`Status Code Error: ${response.status}`);
   return data.json();
