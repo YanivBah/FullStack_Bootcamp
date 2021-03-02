@@ -56,3 +56,23 @@ Your task is to convert the consumed promise not to use .then and .catch but to
 use the modern way using async and await.
 
 ---
+
+# 34.1 - Star Wars
+
+We are going to use [this star wars api](https://pages.github.com/) to get
+information. We want to get information of 10 characters. We want the following
+information:
+
+1. Name
+2. Height
+3. Hair Color
+4. Planet they came from
+5. Planet population
+
+We want you to create an array of objects that will store all of this
+information. Create the object structure like this:
+
+- Note: The value of the key Planet is an object.
+
+We want to place it dynamically into the DOM without using any HTML. Create a
+table using pure JavaScript and place the information there.
