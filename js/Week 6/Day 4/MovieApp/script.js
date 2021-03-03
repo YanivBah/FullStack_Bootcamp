@@ -8,11 +8,11 @@ const fetchData = async (name,year = '') => {
   const movieName = `?t=${name.replaceAll(' ', '+')}`;
   let movieYear = '';
   year !== '' ? movieYear = `&y=${year}` : '';
-  const link = `http://www.omdbapi.com/${movieName}${movieYear}&plot=full&apikey=${APIKey}`;
+  const link = `https://www.omdbapi.com/${movieName}${movieYear}&plot=full&apikey=${APIKey}`;
   const data = await fetch(link);
   const dataJSON = await data.json();
   if (dataJSON.hasOwnProperty('Error')) {
-    return console.log('Sorry');
+    return errorMessage();
   }
   return createElements(dataJSON);
 }
@@ -78,13 +78,35 @@ const createElements = async (data) => {
   console.log(movieData);
 }
 
-const movieNameSearch = document.querySelector('[type="text"]#moviename');
-const movieYearSearch = document.querySelector('[type="number"]#year');
-const search = document.querySelector('[type="submit"]');
-search.addEventListener('click', (e) => {
+const search = () => {
   const movieNameText = movieNameSearch.value;
   const movieYearText = movieYearSearch.value;
   movieNameSearch.value = '';
   movieYearSearch.value = '';
   fetchData(movieNameText,movieYearText);
+}
+
+const errorMessage = () => {
+  debugger;
+  const message = document.createElement('div');
+  message.classList.add('error-box');
+  const p = document.createElement('p');
+  p.classList.add('error-text');
+  p.textContent = `Can't find this movie`;
+  message.appendChild(p);
+  document.body.appendChild(message);
+
+  setTimeout(() => message.remove(),2500);
+}
+
+const movieNameSearch = document.querySelector('[type="text"]#moviename');
+const movieYearSearch = document.querySelector('[type="number"]#year');
+const searchButton = document.querySelector('[type="submit"]');
+searchButton.addEventListener('click', search);
+movieYearSearch.addEventListener('keydown', (e) => {
+  console.log(e);
+  e.key === 'Enter' ? search() : '';
+})
+movieNameSearch.addEventListener('keydown', (e) => {
+  e.key === 'Enter' ? search() : '';
 })

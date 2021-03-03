@@ -63,6 +63,14 @@ input:focus {
   outline: 0;
   border: 3px solid #ff818d;
 }
+[type="submit"]:hover,
+[type="submit"]:focus {
+  /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
+  color: white;
+  transition: 0.35s;
+  /* transform: translateY(-0.25em); */
+  box-shadow: inset 0 0 0 2em #5e81ac;
+}
 
 .msg {
   position: absolute;
@@ -108,6 +116,12 @@ input:focus {
   color: #2e3440;
 }
 
+.header ~ img {
+  min-width: 200px;
+  min-height: 400px;
+  padding: 1rem 0;
+}
+
 .header {
   background: #d8dee9;
   font-weight: 300;
@@ -136,7 +150,7 @@ input:focus {
 }
 .meta {
   display: flex;
-  margin: 20px auto;
+  margin: 0 auto;
   justify-content: space-around;
   padding: 1rem;
   /* align-items: center; */
@@ -152,5 +166,28 @@ input:focus {
   margin-bottom: 10px;
 }
 .plot {
-  padding: 2rem 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.error-box {
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(203 205 211 / 10%);
+}
+
+.error-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  width: 100%;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
