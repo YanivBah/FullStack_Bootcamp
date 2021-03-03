@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #2e3440;
+}
+body {
+  background: #2e3440;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #d8dee9;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card {
+  background: whitesmoke;
+  text-align: center;
+  width: 400px;
+  padding: 1rem;
+  margin: 30px auto;
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.card img {
+  border-radius: 50%;
+  margin: 30px 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card h3 {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  font-size: 22px;
+  display: inline-block;
+  /* width: 100%; */
+  /* height: 100%; */
+  padding: 5px 10px;
+  background: #d8dee9;
+  border: 3px solid transparent;
+  color: #2e3440;
+  border-radius: 0;
+  transition: border 1s;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+input:focus {
+  outline: 0;
+  border: 3px solid #ff818d;
+}
+
+.msg {
+  position: absolute;
+  background: white;
+  width: 500px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 4px solid red;
+}
+.hidden {
+  display: none;
+}
+.msg h3 {
+  color: red;
+  font-size: 30px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.msg p {
+  color: #2e3440;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background: #f6f9ff;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  width: 100%;
+  max-width: 1440px;
+  margin: 50px auto 0 auto;
+  color: #2e3440;
+}
+
+.header {
+  background: #d8dee9;
+  font-weight: 300;
+  padding: 2rem;
+  margin: 10px 0;
+}
+.header h2 {
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0.5rem;
+}
+.rating {
+  display: flex;
+  margin: 1rem auto 0 auto;
+  max-width: 300px;
+  justify-content: center;
+}
+.rating-imdb,
+.rating-rotten,
+.rating-metacritic {
+  margin: 0 40px;
+}
+.info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.meta {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-around;
+  padding: 1rem;
+  /* align-items: center; */
+}
+.meta p {
+  max-width: 250px;
+}
+.meta .title {
+  display: inline-block;
+  font-size: 18px;
+  text-shadow: 0px 0px 3px #2e34409c;
+  border-bottom: 1px solid #2e344050;
+  margin-bottom: 10px;
+}
+.plot {
+  padding: 2rem 2rem;
+}
