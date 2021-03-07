@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: url(./img/background.jpg);
+}
+
+header {
+  width: 100%;
+  color: #d8dee9;
+  padding: 1rem 0 0 0;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.start-menu {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.start-menu h2 {
+  text-align: center;
+  color: #d8dee9;
+  margin: 0 0 10px;
+}
+.start-menu input {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.start-menu button {
+  font-size: 20px;
+  display: block;
+  padding: 1rem 2rem;
+  margin: 50px auto 0 auto;
+  width: 200px;
+}
+input[name="fname"] {
+  margin-bottom: 40px;
+}
+.scores {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto 0 auto;
+  top: 2rem;
+  right: 50px;
+  max-width: 1000px;
+}
+.scores p {
+  font-size: 20px;
+}
+
+.cards-grid {
+  margin: 0 auto;
+  display: grid;
+  height: 80vh;
+  max-width: 1000px;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.card {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.card-back,
+.card-front {
+  transition: transform 0.9s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  image-rendering: crisp-edges;
+}
+
+.card-front.flipped {
+  transform: rotateY(180deg);
+}
+.card-back.flipped {
+  transform: rotateY(-180deg);
+}
+.message {
+  text-align: center;
+  padding: 2rem 1rem;
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 1px solid black;
+  background: white;
+  box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.637);
+}
+.message h3 {
+  font-size: 25px;
+}
+.message .newGame {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 0.4rem 1.6rem;
+}
+.hidden {
+  display: none;
+}
+.blur {
+  filter: blur(9px);
+}
+/* Cards Design */
+.card-back {
+  background: url(./img/red_back.png) no-repeat center center/contain;
+}
+div[data-card-type="club1"] {
+  background: url(./img/AC.png) no-repeat center center/contain;
+}
+div[data-card-type="club2"] {
+  background: url(./img/2C.png) no-repeat center center/contain;
+}
+div[data-card-type="club3"] {
+  background: url(./img/3C.png) no-repeat center center/contain;
+}
+div[data-card-type="club4"] {
+  background: url(./img/4C.png) no-repeat center center/contain;
+}
+div[data-card-type="club5"] {
+  background: url(./img/5C.png) no-repeat center center/contain;
+}
+div[data-card-type="club6"] {
+  background: url(./img/6C.png) no-repeat center center/contain;
+}
+div[data-card-type="club7"] {
+  background: url(./img/7C.png) no-repeat center center/contain;
+}
+div[data-card-type="club8"] {
+  background: url(./img/8C.png) no-repeat center center/contain;
+}
+div[data-card-type="club9"] {
+  background: url(./img/9C.png) no-repeat center center/contain;
+}
+div[data-card-type="club10"] {
+  background: url(./img/JC.png) no-repeat center center/contain;
+}
+div[data-card-type="club11"] {
+  background: url(./img/QC.png) no-repeat center center/contain;
+}
+div[data-card-type="club12"] {
+  background: url(./img/KC.png) no-repeat center center/contain;
+}
+div[data-card-type="heart1"] {
+  background: url(./img/AH.png) no-repeat center center/contain;
+}
+div[data-card-type="heart2"] {
+  background: url(./img/2H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart3"] {
+  background: url(./img/3H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart4"] {
+  background: url(./img/4H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart5"] {
+  background: url(./img/5H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart6"] {
+  background: url(./img/6H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart7"] {
+  background: url(./img/7H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart8"] {
+  background: url(./img/8H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart9"] {
+  background: url(./img/9H.png) no-repeat center center/contain;
+}
+div[data-card-type="heart10"] {
+  background: url(./img/JH.png) no-repeat center center/contain;
+}
+div[data-card-type="heart11"] {
+  background: url(./img/QH.png) no-repeat center center/contain;
+}
+div[data-card-type="heart12"] {
+  background: url(./img/KH.png) no-repeat center center/contain;
+}
