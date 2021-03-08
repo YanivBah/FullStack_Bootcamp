@@ -4,19 +4,22 @@ class sortNumber {
   }
 
   addNum(num) {
-  if (num === 1) {
-    return console.log(false);
-  } else if (num === 2) {
-      this.numList.push(num);
-      return console.log(true);
-  } else {
-    for (let x = 2; x < num; x++) {
-      if (num % x === 0) {
-        return console.log(false);
+    if(this.numList.indexOf(num) === -1) {
+      let isPrime = true;
+    if (num === 1) {
+      isPrime = false;
+    } else if (num === 2) {
+        isPrime = true;
+    } else {
+      for (let x = 2; x < num; x++) {
+        if (num % x === 0) {
+          isPrime = false;
+        }
       }
-    }
-    this.numList.push(num);
-    return console.log(true);
+      }
+      isPrime ? this.numList.push(num) : '';
+      this.numList.sort((a,b) => a - b);
+      return console.log(isPrime);
     }
   }
 
@@ -48,7 +51,7 @@ class sortNumber {
 
 const numbers = new sortNumber();
 numbers.addNum(2);
-numbers.addNum(3);
+numbers.addNum(5);
 numbers.addNum(5);
 numbers.addNum(7);
 
