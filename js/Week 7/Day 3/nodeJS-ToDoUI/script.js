@@ -132,8 +132,9 @@ const newNoteBox = () => {
 }
 
 const todo = new Notes();
-if (localStorage.getItem('notes') === null) {
+if (localStorage.getItem('notes') === null && localStorage.getItem('hashtags') === null) {
   localStorage.setItem('notes',JSON.stringify([]));
+  localStorage.setItem('hashtags',JSON.stringify({}));
 } else {
   todo.myLocalStorage('update');
 }
