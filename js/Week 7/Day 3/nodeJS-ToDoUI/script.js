@@ -43,6 +43,7 @@ class Notes {
   createNoteElement = (note) => {
     const noteContainer = document.createElement('div');
     noteContainer.classList.add('note');
+    noteContainer.classList.add(noteColor)
     const noteHeader = document.createElement('h3');
     noteHeader.classList.add('note-header');
     noteHeader.textContent = `${note.taskName}`;
@@ -70,16 +71,16 @@ class Notes {
     const control = document.createElement('div');
     control.classList.add('control');
     const deleteNote = document.createElement('div');
-    deleteNote.classList.add('delete');
+    deleteNote.classList.add('control--delete');
     deleteNote.innerHTML = `<i class="far fa-trash-alt"></i>`;
     const edit = document.createElement('div');
-    edit.classList.add('edit');
+    edit.classList.add('control--edit');
     edit.innerHTML = `<i class="far fa-edit"></i>`;
     const color = document.createElement('div');
-    color.classList.add('color');
+    color.classList.add('control--color');
     color.innerHTML = `<i class="fas fa-palette"></i>`;
     const hashtag = document.createElement('div');
-    hashtag.classList.add('hashtag');
+    hashtag.classList.add('control--hashtag');
     hashtag.innerHTML = `<i class="fas fa-hashtag"></i>`;
 
     control.appendChild(deleteNote);
@@ -91,11 +92,46 @@ class Notes {
     const grid = document.querySelector('.notes-grid')
     grid.appendChild(noteContainer);
   }
+}
+let noteColor = 'green';
+const $q = document.querySelector.bind(document);
+const $qa = document.querySelectorAll.bind(document);
 
-
+const newNoteBox = () => {
+  const box = $q('.newNoteBox');
+  box.classList.remove('hidden');
 }
 
 const todo = new Notes();
 todo.addNote('homework',`Math and History`);
 todo.addNote('cleaning');
 console.log(todo.notes);
+
+const newNoteButton = $q('.newNote-btn');
+newNoteButton.addEventListener('click',() => {
+  const box = $q('.newNoteBox');
+  box.classList.remove('hidden');
+});
+
+const createBTN = $q('.create');
+createBTN.addEventListener('click', () => {
+  const box = $q('.newNoteBox');
+  console.log('hello');
+  const title = $q('#title').value;
+  $q('#title').value = '';
+  const paragraph = $q('#paragraph').value;
+  $q('#paragraph').value = '';
+  const hashtag = $q('#hashtag').value;
+  $q('#hashtag').value = '';
+  todo.addNote(title,paragraph);
+  todo.createNoteElement(todo.notes[todo.notes.length - 1]);
+  box.classList.add('hidden');
+});
+
+const pickColor = [$q('.color.red'),$q('.color.green'),$q('.color.yellow'),$q('.color.orange'),$q('.color.purple')];
+pickColor.forEach(color => {
+  color.addEventListener('click', (e) => {
+  noteColor = e.target.classList[1];
+  console.log(noteColor);
+  })
+})

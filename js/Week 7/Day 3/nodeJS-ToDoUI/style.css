@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 body {
-  background: #e5e9f0;
+  background: #eceff4;
   font-family: "Noto Sans", sans-serif;
   /* margin: 1rem; */
+}
+a {
+  text-decoration: none;
+  color: #2e3440;
+}
+.hidden {
+  display: none;
+}
+textarea {
+  resize: none;
 }
 header {
   padding: 20px 0;
@@ -21,25 +31,55 @@ h1 i {
   color: #ebcb8b;
   /* border: 2px solid black; */
 }
+
 .container {
   display: grid;
   max-width: 100%;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1.3fr 9fr;
   grid-template-rows: 100px 1fr;
-  gap: 5px;
+  gap: 15px;
 }
+
 .sidebar {
-  background: #4c566a;
+  background: #d8dee9;
   height: 100%;
   grid-row: 1 / span 2;
   height: 100vh;
+  box-shadow: 0px 0px 12px #2e344065;
+}
+.sidebar ul li {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  transition: background 0.4s;
+  cursor: pointer;
+}
+.sidebar ul li:hover {
+  background: #ebcb8b;
+}
+.sidebar ul li i {
+  margin-right: 20px;
 }
 .note {
   background: #a3be8c;
-  /* width: 400px; */
   padding: 1rem 1rem 3rem 1rem;
   position: relative;
   border: 1px solid #4c566a;
+}
+.note.green {
+  background: #a3be8c;
+}
+.note.red {
+  background: #bf616a;
+}
+.note.orange {
+  background: #d08770;
+}
+.note.yellow {
+  background: #ebcb8b;
+}
+.note.purple {
+  background: #b48ead;
 }
 .note-header {
   font-family: "Bebas Neue", cursive;
@@ -72,7 +112,7 @@ h1 i {
   padding: 0 1rem;
 }
 
-.delete {
+.control--delete {
   color: #ff2b3d;
 }
 
@@ -82,4 +122,85 @@ h1 i {
   grid-template-rows: repeat(5, 1fr);
   gap: 15px;
   max-width: 100%;
+}
+
+.newNoteBox {
+  position: absolute;
+  width: 80vw;
+  max-width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #d8dee9;
+  box-shadow: 0px 0px 20px #4c566a9a;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+}
+.newNoteBox h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.newNoteBox input,
+.newNoteBox textarea {
+  outline: 0;
+  background: #eceff4;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.newNoteBox button {
+  font-family: "Bebas Neue", cursive;
+  outline: 0;
+  background: #ebb242;
+  width: 50%;
+  border: 0;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 35px;
+  transition: background 0.4s;
+  cursor: pointer;
+}
+.newNoteBox button:hover,
+.newNoteBox button:active,
+.newNoteBox button:focus {
+  background: #ebc57a;
+}
+
+.pickColor {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.color {
+  height: 30px;
+  width: 30px;
+  border-radius: 40%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.color.red {
+  background: #bf616a;
+}
+.color.orange {
+  background: #d08770;
+}
+.color.yellow {
+  background: #ebcb8b;
+}
+.color.green {
+  background: #a3be8c;
+}
+.color.purple {
+  background: #b48ead;
 }
