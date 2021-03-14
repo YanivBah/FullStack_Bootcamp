@@ -37,3 +37,27 @@ Note that the boxes contain one another.
 Box 1 contains Box2.
 Box 2 contains Box3.
 Box 3 two Box4 components.
+
+---
+
+# 3.2 - Quiz
+
+Create the following Front End Quiz:
+Each element has to be a component
+
+You will have the following components:
+Quiz, QuizTitle, Q1, Q1Title, Q1Input, Q2, Q2Title, Q2Input
+
+Quiz: The overall container
+
+QuizTitle: Quiz title
+
+Q1: First question
+
+Q1Input: First questions input
+
+and so on
+
+Think where do the components belong. Who is the father and who are the
+children.
+
