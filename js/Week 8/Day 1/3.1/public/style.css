@@ -1,0 +1,33 @@
+.box1 {
+  width: 600px;
+  height: 600px;
+  background-color: greenyellow;
+  margin: 0 auto;
+}
+.box1,
+.box2,
+.box3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.box2 {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background: cornflowerblue;
+}
+.box3 {
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  background: plum;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box4 {
+  width: 80%;
+  height: 30%;
+  background: purple;
+}
