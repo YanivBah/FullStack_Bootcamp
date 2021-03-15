@@ -46,3 +46,22 @@ component).
 The box will appear or disappear when the button is clicked.
 
 ![Example](https://i.imgur.com/HB6DYp5.png)
+
+---
+
+# 7.3 - Increment and Decrement
+
+We want to create two buttons and one label.
+
+First button will increment the counter.
+
+Second button will decrement the counter
+
+A label that displays the current value.
+The counter range can only be from -10 to 10.
+
+If the counter is negative the label will be a red color.
+
+If the counter is positive the label will be a green color.
+
+If the counter is 0 the label will be a black color.
