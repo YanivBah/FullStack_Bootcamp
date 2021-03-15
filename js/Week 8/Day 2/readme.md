@@ -7,3 +7,12 @@ Create a button component.
 - Make the 2 nd button with the text “Not Important”
 
 ---
+
+# 4.2 - Cards
+
+Create a card component.
+
+- Render 3x the card component and each card will have a different image, title,
+  description and links.
+
+**For example:** ![card](https://i.imgur.com/4oizO4H.png)
