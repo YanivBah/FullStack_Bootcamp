@@ -35,3 +35,14 @@ value.
 Example:
 
 ![example](https://i.imgur.com/JbQEv3G.png)
+
+---
+
+# 7.2 - Hide and Seek
+
+We want to create a component that contains a box and a button (in the same
+component).
+
+The box will appear or disappear when the button is clicked.
+
+![Example](https://i.imgur.com/HB6DYp5.png)
