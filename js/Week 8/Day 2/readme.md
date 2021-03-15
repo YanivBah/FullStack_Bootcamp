@@ -22,3 +22,16 @@ Create a card component.
 # 6.1 - Class Components
 
 Refactor the previous exercises using class based components.
+
+---
+
+# 7.1 - State
+
+We want to create a counter component.
+
+A label that displays the current value, and a button for incrementing the
+value.
+
+Example:
+
+![example](https://i.imgur.com/JbQEv3G.png)
