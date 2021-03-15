@@ -16,3 +16,9 @@ Create a card component.
   description and links.
 
 **For example:** ![card](https://i.imgur.com/4oizO4H.png)
+
+---
+
+# 6.1 - Class Components
+
+Refactor the previous exercises using class based components.
