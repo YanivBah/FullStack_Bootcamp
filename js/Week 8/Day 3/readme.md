@@ -34,3 +34,18 @@
 1. We want to create a simple app: a box that changes color every half a second.
 
 2. Let’s change the box to a circle after 5 color changes.
+
+---
+
+# 9.1 - Spinner
+
+1. Create a Spinner Component.
+
+2. In the App Component, create a timer when the component mounts to the screen.
+
+3. When the timer is still active display a spinner to the screen.
+
+4. When the timer is finished remove the spinner from the screen.
+
+Extra: Create 3 different spinners and randomly select one of them when the
+program starts.
