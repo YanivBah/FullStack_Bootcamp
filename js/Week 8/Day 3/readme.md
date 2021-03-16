@@ -26,3 +26,11 @@
    the page loads, and then disappears from the DOM after 4 seconds.
 
 2. We also want to be able to add 3 such boxes with different sizes.
+
+---
+
+# 8.3 - Changing Box
+
+1. We want to create a simple app: a box that changes color every half a second.
+
+2. Let’s change the box to a circle after 5 color changes.

@@ -1,0 +1,28 @@
+.box {
+  width: 300px;
+  height: 300px;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: forestgreen;
+}
+
+.violet {
+  background: violet;
+}
+
+.teal {
+  background: teal;
+}
+
+.circle {
+  border-radius: 50%;
+}
