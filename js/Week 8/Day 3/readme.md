@@ -49,3 +49,36 @@
 
 Extra: Create 3 different spinners and randomly select one of them when the
 program starts.
+
+---
+
+# 9.2 - Default Props
+
+In your app component create 4 MusicAlbum components.
+
+Pass to your MusicAlbum component the following props:
+
+1. Album Title
+
+2. Artist Name
+
+3. Number of songs
+
+4. Length
+
+5. A link to one of the songs in the Album
+
+Display them in a simple way in JSX.
+
+You should have one MusicAlbum for a Hebrew album (pass all props to it)
+
+You should have one MusicAlbum for an English album (pass all props to it)
+
+You should have one MusicAlbum for a random album (do not pass artist name and
+length into props)
+
+You should have one MusicAlbum for a default album (do not pass any props to
+it).
+
+Set default props in case we don’t pass any props or missing props to the
+MusicAlbum component.
