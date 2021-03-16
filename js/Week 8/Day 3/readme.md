@@ -1,4 +1,4 @@
-# 8.1 Life Cycle Methods
+# 8.1 - Life Cycle Methods
 
 1. Create an initial state in a component with a key called “favoriteColor” and
    its value some color string.
@@ -17,3 +17,12 @@
    your component.Inside this life cycle method select the empty DOM element and
    insert the text “The updated favorite color is” and attach the new value you
    get from state.
+
+---
+
+# 8.2 - Box Animation
+
+1. We want to create a simple app: a box that slides into the screen 1 sec after
+   the page loads, and then disappears from the DOM after 4 seconds.
+
+2. We also want to be able to add 3 such boxes with different sizes.
