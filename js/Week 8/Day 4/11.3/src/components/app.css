@@ -1,0 +1,56 @@
+body {
+  background: #4c566a;
+}
+#root {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form,
+.review {
+  text-align: center;
+  padding: 20px 20px;
+  background: #d8dee9;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: inset 0px 0px 20px #4c566a;
+}
+form div {
+  margin: 10px 0;
+}
+
+form label {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+select,
+textarea {
+  border-radius: 15px;
+  border: unset;
+  box-shadow: 0px 0px 3px black;
+  background: white;
+  padding: 4px;
+}
+
+button {
+  padding: 7px 17px;
+  background: #424141;
+  color: whitesmoke;
+  border: unset;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin: 5px 10px;
+}
+button:hover {
+  background: #424141a9;
+}
+
+*:focus {
+  outline: none;
+}

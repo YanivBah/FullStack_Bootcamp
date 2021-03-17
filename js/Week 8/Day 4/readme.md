@@ -24,3 +24,37 @@ const colors = [“blue”,”red”,”yellow”];
 
 We want to render 4 checkboxes and make 2 of them checked by default.
 ![Example](https://i.imgur.com/vRotc0d.png)
+
+---
+
+# 11.3 - Form Review
+
+We want to create a survey that will include at least the following inputs:
+
+1. At least two input text tags
+
+2. At least one select tag
+
+3. At least one text area tag
+
+4. All inputs must be controlled
+
+Before the user submits the form they have a chance to review their form before
+they submit it.
+
+They have the opportunity to go back to the form and redo the form if they like
+to.
+
+Form:
+
+![Example](https://i.imgur.com/JYkhc4w.png)
+
+Review:
+
+![Example](https://i.imgur.com/sEYQfmU.png)
+
+### Unleash the Ninja
+
+- Make only one onChange function to handle all inputs
+
+- Use local storage to persist the form values when clicking the back button
