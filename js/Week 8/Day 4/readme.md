@@ -17,3 +17,10 @@ const colors = [“blue”,”red”,”yellow”];
 
 3. When we click on a specific button we need to send that specific color back
    to the parent which will save that color to state and display it to the DOM.
+
+---
+
+# 11.2 - Checkbox
+
+We want to render 4 checkboxes and make 2 of them checked by default.
+![Example](https://i.imgur.com/vRotc0d.png)
