@@ -117,3 +117,18 @@ Create an input field that will focus on the input element when the component
 mounts to the screen.
 
 Target the input field using ref’s.
+
+---
+
+# 14.2 - Copy
+
+We would like to use React to select a textarea’s value and auto copy it.
+
+Create a textarea and a button.
+
+1. When clicking on the button, with the help of React’s ref select the value of
+   the textarea.
+
+2. With the help of document.execCommand copy the value as well.
+
+![Example](https://i.imgur.com/wd4Y5Ja.png)
