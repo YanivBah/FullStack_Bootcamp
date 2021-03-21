@@ -85,3 +85,24 @@ const data = [
    and print them on the screen.
 
 - which includes their name, birthday, favorite meats and favorite fish foods.
+
+---
+
+# 13.2 - Avatars
+
+We will build random avatars with a help of an API.
+
+We are going to use [this API](https://randomuser.me/) to display random avatars
+when the component mounts to the screen.
+
+1. Fetch at least 10 random avatars from the API.
+
+2. Get the relevant data you want from each avatar and save it to state.
+
+3. Display all the avatars on screen.
+
+4. Have an option to filter over the avatars by their name.
+
+We are essentially filtering over an array of objects by the objects name value.
+
+Extra tip: Use the filter and includes method to achieve this.
