@@ -106,3 +106,14 @@ when the component mounts to the screen.
 We are essentially filtering over an array of objects by the objects name value.
 
 Extra tip: Use the filter and includes method to achieve this.
+
+---
+
+# 14.1 - Refs
+
+Many times when you create a form you want to focus right away on a input field.
+
+Create an input field that will focus on the input element when the component
+mounts to the screen.
+
+Target the input field using ref’s.
