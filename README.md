@@ -7,6 +7,6 @@ I started this Fullstack Bootcamp at 24/01/2021.
 The Bootcamp will cover:
   - ✔️ HTML
   - ✔️ CSS
-  - Javascript
+  - ✔️ Javascript
   - React
   - Node
