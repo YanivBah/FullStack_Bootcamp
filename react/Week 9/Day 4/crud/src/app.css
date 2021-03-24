@@ -127,3 +127,13 @@ q:before {
   content: "";
   content: none;
 }
+
+h1 {
+  display: block;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  border-left: 3px solid #2e3440;
+  border-right: 3px solid #2e3440;
+  margin-bottom: 15px;
+}
