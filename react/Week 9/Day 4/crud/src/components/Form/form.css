@@ -24,3 +24,9 @@ form div select {
 form div select {
   width: calc(75% + 22px);
 }
+
+input.wrong {
+  border: 1px solid red;
+  font-weight: bold;
+  color: red;
+}

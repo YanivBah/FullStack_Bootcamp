@@ -1,8 +1,8 @@
-import axios from "axios";
 import React from "react";
 import api from './api/api';
 import "./app.css";
 import Form from './components/Form/Form';
+import WatchedDisplay from './components/WatchedDisplay/WatchedDisplay';
 
 class App extends React.Component {
 
@@ -15,12 +15,11 @@ class App extends React.Component {
 
   create = (name, image, rating) => {
     const newItem = {
-      watchedAt: new Date(),
       movieName: name,
       rating: parseInt(rating),
       image: image
     };
-    api.post('movies');
+    api.post('movies', newItem);
   }
 
   update = () => {
@@ -28,7 +27,7 @@ class App extends React.Component {
   }
 
   delete = () => {
-    
+
   }
 
   render() {
@@ -36,7 +35,10 @@ class App extends React.Component {
     return (
       <div>
         <h1>Movies and TV Shows Watchlist</h1>
-        <Form/>
+        <Form onClick={this.create}/>
+        {this.state.data.map(watched => {
+         return <WatchedDisplay movie={watched} /> 
+        })}
       </div>
     );
   };
