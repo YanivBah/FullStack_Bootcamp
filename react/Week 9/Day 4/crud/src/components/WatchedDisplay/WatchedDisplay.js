@@ -17,8 +17,20 @@ class WatchedDisplay extends React.Component {
         <p>Watched at: {date.toLocaleDateString("en-UK")}</p>
         <span className="rating">{"⭐".repeat(parseInt(rating))}</span>
         <div className="row">
-        <button onClick={() => {this.props.edit(this.nameRef.current.textContent)}}>Edit</button>
-        <button>Delete</button>
+          <button
+            onClick={() => {
+              this.props.edit(this.nameRef.current.textContent);
+            }}
+          >
+            Edit
+          </button>
+          <button
+            onClick={() => {
+              this.props.delete(this.nameRef.current.textContent);
+            }}
+          >
+            Delete
+          </button>
         </div>
       </div>
     );

@@ -35,7 +35,7 @@ class Form extends React.Component {
     } else {
       this.nameRef.current.value = '';
       this.imageRef.current.value = '';
-      this.ratingRef.current.value = '';
+      this.ratingRef.current.value = '1';
     }
   }
 
@@ -76,7 +76,13 @@ class Form extends React.Component {
         </div>
         {this.props.current && (
           <React.Fragment>
-            <button>Update</button>
+            <button onClick={(e) => {
+              e.preventDefault();
+              let name = this.nameRef.current;
+              let image = this.imageRef.current;
+              let rating = this.ratingRef.current;
+              this.props.update(name.value,image.value,rating.value);
+            }}>Update</button>
             <button onClick={() => this.props.cancel(null)}>Cancel</button>
           </React.Fragment>
         )}
