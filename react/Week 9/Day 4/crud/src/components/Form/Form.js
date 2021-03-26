@@ -26,10 +26,24 @@ class Form extends React.Component {
     this.props.onClick(name.value,image.value,rating.value);
   }
 
+  componentDidUpdate() {
+    if (this.props.current) {
+      const { movieName, rating, image} = this.props.current;
+      this.nameRef.current.value = movieName;
+      this.imageRef.current.value = image;
+      this.ratingRef.current.value = rating;
+    } else {
+      this.nameRef.current.value = '';
+      this.imageRef.current.value = '';
+      this.ratingRef.current.value = '';
+    }
+  }
+
   render() {
+    console.log(this.props.current);
     return (
       <form>
-        <h3>Add New</h3>
+        <h3>{this.props.current ? "Edit" : "Add New"}</h3>
         <div>
           <label htmlFor="movie-name">Movie/TV Show Name:</label>
           <input
@@ -60,7 +74,17 @@ class Form extends React.Component {
             <option value="5">5</option>
           </select>
         </div>
-        <button onClick={this.handleClick} type="submit">Add</button>
+        {this.props.current && (
+          <React.Fragment>
+            <button>Update</button>
+            <button onClick={() => this.props.cancel(null)}>Cancel</button>
+          </React.Fragment>
+        )}
+        {!this.props.current && (
+          <button onClick={this.handleClick} type="submit">
+            Add
+          </button>
+        )}
       </form>
     );
   }

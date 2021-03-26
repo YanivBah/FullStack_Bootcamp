@@ -30,3 +30,7 @@ input.wrong {
   font-weight: bold;
   color: red;
 }
+
+form button {
+  margin: 0 10px;
+}
