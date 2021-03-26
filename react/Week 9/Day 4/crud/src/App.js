@@ -17,8 +17,12 @@ class App extends React.Component {
     const newItem = {
       movieName: name,
       rating: parseInt(rating),
-      image: image
+      image: image,
+      watchedAt: new Date(),
     };
+    const newData = [...this.state.data];
+    newData.push(newItem);
+    this.setState({data: newData});
     api.post('movies', newItem);
   }
 
@@ -31,14 +35,14 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div>
         <h1>Movies and TV Shows Watchlist</h1>
         <Form onClick={this.create}/>
+        <div className="grid">
         {this.state.data.map(watched => {
-         return <WatchedDisplay movie={watched} /> 
-        })}
+         return <WatchedDisplay movie={watched} />        })}
+        </div>
       </div>
     );
   };

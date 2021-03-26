@@ -137,3 +137,9 @@ h1 {
   border-right: 3px solid #2e3440;
   margin-bottom: 15px;
 }
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;
+}
