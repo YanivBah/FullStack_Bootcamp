@@ -1,0 +1,10 @@
+.task {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.task:hover {
+  transform: translateX(-10px);
+}
+.completed {
+  text-decoration: line-through;
+}
