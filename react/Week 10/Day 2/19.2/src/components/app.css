@@ -1,0 +1,58 @@
+body {
+  background: #4c566a;
+  color: aliceblue;
+}
+#root {
+  padding: 0 100px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  padding: 7px 17px;
+  background: #424141;
+  color: whitesmoke;
+  border: unset;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin: 5px 10px;
+}
+button:hover {
+  background: #5f5f5fa9;
+  color: orange;
+}
+
+input {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+li {
+  font-size: 14px;
+  padding: 1px 0;
+  counter-increment: li;
+}
+
+li::marker {
+  display: list-item;
+  content: counter(li) ".  ";
+  color: lightsalmon;
+  font-weight: bold;
+}
+
+*:focus {
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid greenyellow;
+}
