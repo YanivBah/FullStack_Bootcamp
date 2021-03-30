@@ -1,0 +1,25 @@
+.spinner {
+  width: 150px;
+  height: 150px;
+  border-right: 3px solid cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border-radius: 50%;
+  animation: rotate-center 1.4s linear infinite both;
+}
+
+.spinner p {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
