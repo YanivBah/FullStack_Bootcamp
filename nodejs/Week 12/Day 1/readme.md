@@ -14,3 +14,18 @@ fs module, lets do the following:
    the fs module.
 
 5. Find out and implement another method for the fs module.
+
+---
+
+# 3.1 - Import/Export
+
+Q1: What is the difference between import and require?
+
+Q2: How can you enable using the import syntax using node js.
+
+Q3: Give 2 node.js environment variables that are not available when using the
+import syntax.
+
+Create 3 functions using the export/import syntax.
+
+Import the file system module using the import syntax.
