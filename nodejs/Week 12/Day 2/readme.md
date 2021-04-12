@@ -130,3 +130,15 @@ const food = (arr) => {
 console.log(food(data));
 
 ```
+
+---
+
+# 7.1 - Debugging
+
+Choose one of API and implement fetching from them with:
+
+- Fetch data using axios
+
+- fetch data using the request module
+
+- Fetch data using another 3rd party module
