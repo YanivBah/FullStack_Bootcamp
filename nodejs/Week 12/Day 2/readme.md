@@ -133,8 +133,7 @@ console.log(food(data));
 
 ---
 
-# 7.1 - Debugging
-
+# 7.1 - API's
 Choose one of API and implement fetching from them with:
 
 - Fetch data using axios
