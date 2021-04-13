@@ -8,5 +8,5 @@ The Bootcamp will cover:
   - ✔️ HTML
   - ✔️ CSS
   - ✔️ Javascript
-  - React
+  - ✔️ React
   - Node
