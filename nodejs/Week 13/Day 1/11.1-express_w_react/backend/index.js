@@ -11,6 +11,7 @@ const {
 } = require("./utils");
 
 const app = express();
+const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.post("/bank/newuser/:passportID", async (req,res) => {
@@ -68,4 +69,4 @@ app.get("/bank/users/filter", async (req, res) => {
   res.status(status).json(data);
 });
 
-app.listen(3001, () => console.log("The server is on localhost:3001"));
+app.listen(port, () => console.log(`The server is on port:${port}`));
