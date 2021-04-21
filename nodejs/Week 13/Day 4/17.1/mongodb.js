@@ -35,13 +35,10 @@ const Product = mongoose.model('Product', {
       default: 0
     },
     images: {
-      type: Array,
+      type: [Buffer],
       required: [true, 'Enter images please.'],
       validate(value) {
         if (value.length < 2) throw new Error('You need at least 2 images.')
-        value.forEach(img => {
-          if (!Buffer.isBuffer(img)) throw new Error('All images need to be buffers');
-        })
       }
     },
     phoneNumber: {
