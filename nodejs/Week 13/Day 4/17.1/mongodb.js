@@ -99,8 +99,8 @@ product1.save()
 .then(() => {console.log(product1);})
 .catch((err) => {console.log(err)});
 product2.save()
-.then(() => {console.log(product1);})
+.then(() => {console.log(product2);})
 .catch((err) => {console.log(err)});
 product3.save()
-.then(() => {console.log(product1);})
+.then(() => {console.log(product3);})
 .catch((err) => {console.log(err)});
