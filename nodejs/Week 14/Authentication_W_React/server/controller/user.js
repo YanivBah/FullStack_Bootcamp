@@ -1,4 +1,3 @@
-const { findById } = require('../model/user');
 const User = require('../model/user');
 
 const loginUser = async (req,res) => {
@@ -40,4 +39,16 @@ const addItem = async (req, res) => {
   }
 }
 
-module.exports = { loginUser, signupUser, userDetails, addItem };
+const deleteItem = async (req, res) => {
+  try {
+    req.user.shoppingList = req.user.shoppingList.filter(item => {
+      return item._id.toString() !== req.body._id;
+    });
+    req.user.save();
+    res.send(req.user.shoppingList);
+  } catch(e) {
+    res.send(400).send(e);
+  }
+}
+
+module.exports = { loginUser, signupUser, userDetails, addItem, deleteItem };

@@ -45,3 +45,23 @@ input:focus {
 p {
   font-size: 19px;
 }
+
+.item {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 5px;
+}
+.item button {
+  margin-left: 20px;
+  padding: 3px 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
+}

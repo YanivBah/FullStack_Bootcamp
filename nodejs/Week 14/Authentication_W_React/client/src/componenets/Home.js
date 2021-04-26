@@ -8,7 +8,6 @@ const Home = ({userData}) => {
   const [amountVal, setAmountVal] = useState(0);
 
   const handleAdd = async () => {
-    console.log(user);
     const body = {
       item: itemVal,
       amount: Number(amountVal)
@@ -18,7 +17,7 @@ const Home = ({userData}) => {
       const data = await axios.patch("/add", body, header);
       const newUser = { ...user };
       newUser.user.shoppingList = data.data;
-      await setUser(newUser);
+      setUser(newUser);
     } catch(e) {
       console.log(e.response);
     }
@@ -50,7 +49,7 @@ const Home = ({userData}) => {
         </div>
         <button onClick={handleAdd}>Add</button>
       </div>
-      <List user={user} />
+      <List userData={{ user, setUser }} />
     </div>
   );
 }
